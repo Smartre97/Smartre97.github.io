@@ -29,6 +29,28 @@
                 "杂项",
                 "杂项"
             ]
+        },
+        {
+            "id": "https://github.com/Smartre97/Smartre97.github.io/2023/07/25/heart/",
+            "url": "https://github.com/Smartre97/Smartre97.github.io/2023/07/25/heart/",
+            "title": "友情连接",
+            "date_published": "2023-07-24T18:30:48.000Z",
+            "content_html": "<p>一个对于博客搭建的文章实验性页面。<br />\n正在对如何搭建博客与更新文章，更新博客版式等进行探索<br />\n后续会更改为 markdown 语法的使用笔记</p>\n<h1 id=\"设置标题\"><a class=\"anchor\" href=\"#设置标题\">#</a> 设置标题</h1>\n<h2 id=\"这算是中标题\"><a class=\"anchor\" href=\"#这算是中标题\">#</a> 这算是中标题</h2>\n<h3 id=\"好的那么这就是小标题\"><a class=\"anchor\" href=\"#好的那么这就是小标题\">#</a> 好的那么这就是小标题</h3>\n<h4 id=\"\"><a class=\"anchor\" href=\"#\">#</a> </h4>\n<h5 id=\"-2\"><a class=\"anchor\" href=\"#-2\">#</a> </h5>\n<h6 id=\"-3\"><a class=\"anchor\" href=\"#-3\">#</a> </h6>\n<p>#######<br />\n好的最大 6 级标题</p>\n<p>代码框这样放：</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo new <span class=\"token string\">\"My New Post\"</span></pre></td></tr></table></figure><p>那么下面这个。emmm，看来中括号里面的是在网页上显示的内容，而小括号会赋予超链接。<br />\n好的那么在这里放一个 github 官网试试: <a href=\"https://github.com/\">github</a></p>\n",
+            "tags": [
+                "杂项",
+                "杂项"
+            ]
+        },
+        {
+            "id": "https://github.com/Smartre97/Smartre97.github.io/2023/07/25/friends/",
+            "url": "https://github.com/Smartre97/Smartre97.github.io/2023/07/25/friends/",
+            "title": "友情连接",
+            "date_published": "2023-07-24T18:30:48.000Z",
+            "content_html": "<p>一个对于博客搭建的文章实验性页面。<br />\n正在对如何搭建博客与更新文章，更新博客版式等进行探索<br />\n后续会更改为 markdown 语法的使用笔记</p>\n<h1 id=\"设置标题\"><a class=\"anchor\" href=\"#设置标题\">#</a> 设置标题</h1>\n<h2 id=\"这算是中标题\"><a class=\"anchor\" href=\"#这算是中标题\">#</a> 这算是中标题</h2>\n<h3 id=\"好的那么这就是小标题\"><a class=\"anchor\" href=\"#好的那么这就是小标题\">#</a> 好的那么这就是小标题</h3>\n<h4 id=\"\"><a class=\"anchor\" href=\"#\">#</a> </h4>\n<h5 id=\"-2\"><a class=\"anchor\" href=\"#-2\">#</a> </h5>\n<h6 id=\"-3\"><a class=\"anchor\" href=\"#-3\">#</a> </h6>\n<p>#######<br />\n好的最大 6 级标题</p>\n<p>代码框这样放：</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"><span>h</span></figcaption><table><tr><td data-num=\"1\"></td><td><pre>$ hexo new <span class=\"token string\">\"My New Post\"</span></pre></td></tr></table></figure><p>那么下面这个。emmm，看来中括号里面的是在网页上显示的内容，而小括号会赋予超链接。<br />\n好的那么在这里放一个 github 官网试试: <a href=\"https://github.com/\">github</a></p>\n",
+            "tags": [
+                "杂项",
+                "杂项"
+            ]
         }
     ]
 }
