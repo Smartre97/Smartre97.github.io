@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="alternate" href="/rss.xml" title="轻沣的航海日志" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="轻沣的航海日志" type="application/atom+xml"><link rel="alternate" type="application/json" title="轻沣的航海日志" href="https://smartre97.github.io/feed.json"><link rel="preconnect" href="https://s4.zstatic.net"><link rel="preconnect" href="https://at.alicdn.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext" media="none" onload="this.media='all'"><link rel="modulepreload" href="/js/siteInit.js"><link rel="modulepreload" href="/js/nyx-player-5EU3IYCZ.js"><link rel="modulepreload" href="/js/copy-tex-IQN42IRT.js"><link rel="modulepreload" href="/js/post-NTOXYCIA.js"><link rel="modulepreload" href="/js/chunk-VHNIDU6B.js"><link rel="modulepreload" href="/js/chunk-5QOIMWLB.js"><link rel="stylesheet" href="/css/siteInit.css" media="none" onload="this.media='all'"><link rel="preload" href="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200" as="image" fetchpriority="high"><link rel="preload" href="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200" as="image" fetchpriority="high"><link rel="preload" href="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200" as="image" fetchpriority="high"><link rel="preload" href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200" as="image" fetchpriority="high"><link rel="preload" href="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200" as="image" fetchpriority="high"><link rel="preload" href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200" as="image" fetchpriority="high"><meta name="keywords" content="c++11"><meta name="description" content="菜鸡的日常技术记录"><link rel="canonical" href="https://smartre97.github.io/2026/08/14/%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/"><link rel="stylesheet" href="/css/post.css?v=0.5.4"><link rel="stylesheet" href="/css/mermaid.css?v=0.5.4"><!-- 临时处理--><link rel="stylesheet" media="none" onload="this.media='all'" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css"><title>左值和右值</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope="" itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="pagefind_mount"></div><div id="container"><header id="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">左值和右值</h1><div class="meta"><span class="item" title="創建時間：2026-08-14 15:59:42"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">發表於</span><time itemprop="dateCreated datePublished" datetime="2026-08-14T15:59:42+08:00">2026-08-14</time></span><span class="item" title="文章字數"><span class="icon"><i class="ic i-pen"></i></span><span class="text">文章字數</span><span>4.8k</span><span class="text">字</span></span><span class="item" title="所需閱讀時間"><span class="icon"><i class="ic i-clock"></i></span><span class="text">所需閱讀時間</span><span>4 分鐘</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切換導航欄"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">轻沣的航海日志</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" style="background-image: url(&quot;https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&quot;);"></li><li class="item" style="background-image: url(&quot;https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&quot;);"></li><li class="item" style="background-image: url(&quot;https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200&quot;);"></li><li class="item" style="background-image: url(&quot;https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&quot;);"></li><li class="item" style="background-image: url(&quot;https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200&quot;);"></li><li class="item" style="background-image: url(&quot;https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&quot;);"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemlistelement="" itemscope="" itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首頁</a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" data-pagefind-body="data-pagefind-body" lang="zh-cn"><link itemprop="mainEntityOfPage" href="https://smartre97.github.io/2026/08/14/%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/"><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/avatar.jpg"><meta itemprop="name" content="轻沣"><meta itemprop="description" content="没招了，太难学了, 菜鸡的日常技术记录"></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="轻沣的航海日志"></span><div class="body md" itemprop="articleBody"><p>复习资料：</p>
+<p>C++11左值与右值详解-CSDN博客</p>
+<p>深入理解 C++11 中的 std::move —— 移动语义详解（小白友好版）-CSDN博客</p>
+<p>c++ 左值和右值_c++的左值和右值-CSDN博客</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Esp7eFE54?p=57&amp;vd_source=7bb03e841da18b1373084bf7955696c5">https://www.bilibili.com/video/BV1Esp7eFE54?p=57&amp;vd_source=7bb03e841da18b1373084bf7955696c5</a></p>
+<p>左值和右值</p>
+<p>左值 locator value</p>
+<p>特点：</p>
+<p>具有地址，存储在内存中，可以&amp;取地址</p>
+<p>表达式结束后依然存在。</p>
+<p>通常出现在等号左边</p>
+<p>例子：</p>
+<p>int a = 10;     // a 是左值<br>
+int* p = &amp;a;    // 可以取地址<br>
+a = 20;         // 可以被赋值<br>
+变量、对象、数组都是左值</p>
+<p>右值</p>
+<p>特点：</p>
+<p>通常没有地址，存储在寄存器或者临时内存中</p>
+<p>不能取地址（除非绑定到const左值引用）</p>
+<p>通常是字面量、临时对象或表达式的中间结果。</p>
+<p>通常出现在等号右边。</p>
+<p>例子：</p>
+<p>int x = 5 + 8;  // 13 是一个右值（字面量/临时结果）<br>
+string s = string("hello"); // string("hello") 是一个临时对象，右值<br>
+10 = y; //错误，右值不能再=左侧<br>
+int&amp; ref = 10; //错误普通引用不能绑定右值<br>
+const int&amp; cref = 10; //const引用可以绑定右值</p>
+<p>右值分类</p>
+<p>纯右值（prvalue） 将亡值（xvalue））</p>
+<p>纯右值（prvalue）</p>
+<p>如10、true、nullptr。</p>
+<p>将亡值（xvalue））：</p>
+<p>通过std::move转换得到的，即将销毁，但还能暂时使用的值。</p>
+<p>‍<br>
+‍</p>
+<p>总的来说，例如：</p>
+<p>int a = b+c, a 就是左值，其有变量名为a，通过&amp;a可以左值引用，获取该变量的地址。</p>
+<p>表达式b+c，返回值是右值，在其被赋值给某一变量前，我们不能通过变量名找到它，＆(b+c)这样的操作不会通过编译。</p>
+<p>左值引用</p>
+<p>#include &lt;bits/stdc++.h&gt;<br>
+using namespace std;<br>
+int main(){<br>
+int a=10;<br>
+int&amp; b=a;// b是a的引用，引用相当于变量的别名，具体通过指针实现（读取a的地址，将a的地址存入b,相当于b指向了a）<br>
+cout&lt;&lt;b;//输出10<br>
+b=20;<br>
+cout&lt;&lt;a;//输出20<br>
+}<br>
+地址          内容<br>
+0x222220(a)   10<br>
+0x222230(b)   0x222220</p>
+<p>右值操作</p>
+<p>右值引入的目的是为了减少无意义的拷贝，主要与处理临时对象、转移资源、优化性能相关。</p>
+<p>右值引用</p>
+<p>移动构造函数与移动赋值运算符</p>
+<p>std::move</p>
+<p>std::forward与完美转发</p>
+<p>右值引用</p>
+<p>c++11新语法，专门用于绑定在右值上。</p>
+<p>右值引用运行绑定右值，并对他们操作，从而避免一些不必要的复制操作，实现更高效的代码</p>
+<p>int&amp; a = 10; // 错误：普通引用（左值引用）不能绑定右值。<br>
+const int&amp; a = 10; // 正确：常左值引用可以延长右值寿命，但不能修改。<br>
+int&amp;&amp; a = 10; // 正确：右值引用，可以修改该值。移动语义</p>
+<p>#include &lt;bits/stdc++.h&gt;<br>
+using namespace std;<br>
+int main(){<br>
+int a=10;<br>
+int&amp; b=a;<br>
+b=20;</p>
+<pre><code>const int&amp;&amp; b=20;
+</code></pre>
+<p>}</p>
+<p>主要用途：</p>
+<p>移动语义</p>
+<p>完美转发</p>
+<p>移动语义</p>
+<p>移动语义用于实现移动构造函数和移动赋值运算符。通过std::move触发。</p>
+<p>在旧c++标准中，传递和返回大型对象需要拷贝构造，这样的拷贝会造成资源浪费。</p>
+<p>#include &lt;string&gt;<br>
+#include &lt;iostream&gt;<br>
+using namespace std;<br>
+std::string LongString() {<br>
+string s = "大型数据对象";<br>
+return s; //将s的值拷贝给临时对象<br>
+}<br>
+int main() {<br>
+string str = LongString(); // 从函数返回值的临时对象拷贝给str<br>
+return 0;<br>
+}</p>
+<p>移动构造函数与移动赋值运算符</p>
+<p>作用：不进行深拷贝（分配新内存，复制数据），而是进行资源转移（把旧对象指针给新对象，同时将旧对象指针置空）。可以说，深拷贝是复制一个文件，你会有两份文件。而资源转移是你把手中的文件给了另一个人，你手里不再有文件了，文件只存在一份。中途不进行无意义的拷贝。</p>
+<p>class Buffer {<br>
+int* data;<br>
+public:<br>
+// 移动构造函数<br>
+Buffer(Buffer&amp;&amp; other) noexcept {<br>
+this-&gt;data = other.data;  // 窃取资源<br>
+other.data = nullptr;     // 置空原对象，防止析构时释放内存<br>
+}<br>
+};</p>
+<p>移动构造函数使用案例</p>
+<p>没有使用移动构造函数的情况</p>
+<p>#include &lt;iostream&gt;<br>
+#include &lt;utility&gt; //为了使用 std::move</p>
+<p>class MyBuffer {<br>
+public:<br>
+int* data;<br>
+int size;<br>
+//构造函数<br>
+MyBuffer(int s) : size(s) {<br>
+data = new int[size];<br>
+}</p>
+<pre><code>//拷贝构造函数：深拷贝（重新申请内存，复制内容）
+MyBuffer(const MyBuffer&amp; other) : size(other.size) {
+    data = new int[size]; //又申请了一块内存
+    for (int i = 0; i &lt; size; i++) {
+        data[i] = other.data[i]; //逐个复制
+    }
+    std::cout &lt;&lt; "深拷贝\n";
+}
+
+//移动构造函数
+//注意：参数是 MyBuffer&amp;&amp; （右值引用）
+MyBuffer(MyBuffer&amp;&amp; other) noexcept {
+    this-&gt;data = other.data;  //直接把对方的指针拿过来，不用开辟新内存
+    this-&gt;size = other.size;
+
+    other.data = nullptr;     //把原对象的指针置为空，防止对方析构时把内存删掉
+    other.size = 0;
+
+    std::cout &lt;&lt; "移动构造，直接接管内存\n";
+}
+
+~MyBuffer() {
+    delete[] data;
+}
+</code></pre>
+<p>};</p>
+<p>int main() {<br>
+MyBuffer a(1000000);</p>
+<pre><code>MyBuffer b = a;       //调用拷贝构造函数
+
+//std::move(a) 告诉编译器：把a当作右值处理，我想把它“移动”走
+MyBuffer b = std::move(a); //使用移动构造函数
+
+//此时，a的data变成了nullptr，b接管了那 100 万个整数的内存
+return 0;
+</code></pre>
+<p>}</p>
+<p>std::move</p>
+<p>作用：强制将一个左值转换为右值（将亡值）</p>
+<p>string s1 = "hello";<br>
+string s2 = std::move(s1); // 调用移动构造，s1 现在变为空</p>
+<p>本质上他不是移动，至少一个类型转换，告诉编译器s1不再使用，把他当成右值拿走处理就好。</p>
+<p>‍</p>
+<p>move和指针赋值的区别</p>
+<p>string a = "Hello";<br>
+string b = move(a);  // 对象级别的资源转移</p>
+<p>// 发生的事情：<br>
+// 1. a 对象内部的字符串资源被转移给 b<br>
+// 2. a 对象本身还存在，但内容变空<br>
+// 3. 只有一份字符串数据在内存中</p>
+<p>指针赋值</p>
+<p>string* pa = new string("Hello");<br>
+string* pb = pa;  // 指针拷贝，两个指针指向同一内存</p>
+<p>// 发生的事情：<br>
+// 1. pa 和 pb 都指向同一个字符串对象<br>
+// 2. 内存中只有一个字符串对象<br>
+// 3. 但有两个指针指向它</p>
+<p>std::forward与完美转发</p>
+<p>作用：配合模版在范式编程转发参数，避免不必要的拷贝和移动，保持参数的原有属性（左值还是右值）</p>
+<p>例如将一个右值传给一个模版函数时，这个右值会在函数内部成为一个有名字的变量，这会将它变为左值。std::forward可以避免这种情况，将它还原为右值。</p>
+<p>#include &lt;iostream&gt;<br>
+#include &lt;utility&gt;</p>
+<p>void process(int&amp; x) {<br>
+std::cout &lt;&lt; "处理左值\n";<br>
+}</p>
+<p>void process(int&amp;&amp; x) {<br>
+std::cout &lt;&lt; "处理右值\n";<br>
+}</p>
+<p>//不使用完美转发<br>
+//写一个wrapper函数，接收参数传给proccess<br>
+template&lt;typename T&gt;<br>
+void wrapper(T&amp;&amp; arg) {<br>
+// 这里的 arg 虽然被声明为 T&amp;&amp; (万能引用)，<br>
+// 但在函数内部，arg 是有名字的变量，所以它成了左值！<br>
+process(arg);<br>
+}</p>
+<p>int main() {<br>
+int a = 10;<br>
+wrapper(a);  // 传入左值，输出：处理左值<br>
+wrapper(10); // 传入右值，输出：处理左值 (报错/不符合预期！)<br>
+}<br>
+//即使给wrapper传了一个右值10，但在wrapper内部，arg变成了一个有名字的左值，导致它调用的永远是 process(int&amp;)。</p>
+<p>//使用完美转发<br>
+template&lt;typename T&gt;<br>
+void wrapper(T&amp;&amp; arg) {<br>
+// std::forward&lt;T&gt;(arg) 会根据 T 的类型<br>
+// 决定把 arg 转发为左值引用还是右值引用<br>
+process(std::forward&lt;T&gt;(arg));<br>
+}</p>
+<p>int main() {<br>
+int a = 10;<br>
+std::cout &lt;&lt; "传递 a (左值): ";<br>
+wrapper(a);  //输出：处理左值</p>
+<pre><code>std::cout &lt;&lt; "传递 10 (右值): ";
+wrapper(10); //输出：处理右值
+</code></pre>
+<p>}</p>
+<p>在写模版，例如工厂模式、智能指针内部、std::vector::emplace_black时，你不知道用户传进来的是左值还是右值，为保证效率不产生额外拷贝，必须使用完美转发将参数属性不变的传递给下一个函数</p>
+<div class="tags"><a href="/tags/c-11/" rel="tag"><i class="ic i-tag"></i>c++11</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新於 </span><time title="修改時間：2026-08-14 17:29:23" itemprop="dateModified" datetime="2026-08-14T17:29:23+08:00">2026-08-14</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>捐贈</button><p>請我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" src="/assets/wechatpay.avif" alt="轻沣 微信支付"><p>微信支付</p></div><div><img loading="lazy" src="/assets/alipay.avif" alt="轻沣 支付寶"><p>支付寶</p></div></div></div><div id="copyright"><ul><li class="author"><strong>作者：</strong>轻沣<i class="ic i-at"><em>@</em></i>轻沣的航海日志</li><li class="link"><strong>文章連結：</strong><a href="https://smartre97.github.io/2026/08/14/%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/" title="左值和右值">https://smartre97.github.io/2026/08/14/左值和右值/</a></li><li class="license"><strong>版權聲明：</strong>本網誌所有文章除特別聲明外，均採用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 許可協議。轉載請註明出處！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2026/08/14/My-New-Post/" rel="prev" itemprop="url" data-background-image="https://images.unsplash.com/photo-1511576661531-b34d7ad5d0db?w=1200" title="My New Post"><span class="type">上一篇</span><h3>My New Post</h3></a></div><div class="item right"><a href="/2026/08/14/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E5%A2%9E%E5%BC%BA/" rel="next" itemprop="url" data-background-image="https://images.unsplash.com/photo-1472214222541-d510753a4907?w=1200" title="三目运算符的增强"><span class="type">下一篇</span><h3>三目运算符的增强</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目錄"></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="本站概要"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="轻沣" src="/assets/avatar.avif"><p class="name" itemprop="name">轻沣</p><div class="description" itemprop="description">菜鸡的日常技术记录</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">12</span><span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">7</span><span class="name">標籤</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/yourname" class="item github" title="https://github.com/yourname"><i class="ic i-github"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首頁</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2026/08/14/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E5%A2%9E%E5%BC%BA/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2026/08/14/My-New-Post/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div><div id="player"></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>隨機文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/UE%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE-%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7or%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC/">UE存储数据 数据资产or数据表格</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/UE-TraceHitResult/">UE TraceHitResult</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/GameplayTag/">GameplayTag</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/My-New-Post/">My New Post</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/UE%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7DataAsset/">UE数据资产DataAsset</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/UnLua%E7%9A%84%E4%BD%BF%E7%94%A8/">UnLua的使用</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E5%A2%9E%E5%BC%BA/">三目运算符的增强</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/">左值和右值</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/13/hello-world/">Hello World</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2026/08/14/GAS%E5%88%9D%E8%AF%86%E4%B8%8E%E5%BA%94%E7%94%A8/">GAS初识与应用</a></span></li></ul></div><div class="rpost pjax"><h2>最新評論</h2></div></div><div class="status"><div class="copyright">© 2022 -<span itemprop="copyrightYear">2026</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">轻沣 @ 轻沣的航海日志</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="總字數">10k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="所需總閱讀時間">9 分鐘</span></div><div class="powered-by">基於 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config="" type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2026/08/14/左值和右值/`,
+    favicon: {
+        show: `（●´3｀●）復活成功`,
+        hide: `(´Д｀)瀏覽器崩潰啦`
+    },
+    search: {
+        placeholder: "文章搜尋",
+        empty: "關於 「 ${query} 」 ，什麼也沒搜到",
+        stats: "${time} ms 內找到 ${hits} 條結果"
+    },
+    nocopy: "false",
+    copyright: `複製成功，轉載請遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 協議。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章時效性提示</span><br>這是一篇發佈於 {{publish}} 天前，最後一次更新在 {{updated}} 天前的文章，部分信息可能已經發生改變，請注意甄別。</p></div>`,
+    quiz: {
+        choice: `單選題`,
+        multiple: `多選題`,
+        true_false: `判斷題`,
+        essay: `問答題`,
+        gap_fill: `填空題`,
+        mistake: `錯題備註`
+    }
+};
+</script><script src="/js/siteInit.js?v=0.5.4" type="module" fetchpriority="high" defer=""></script></body></html>

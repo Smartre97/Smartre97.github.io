@@ -7,6 +7,119 @@
     "home_page_url": "https://smartre97.github.io",
     "items": [
         {
+            "id": "https://smartre97.github.io/2026/08/14/UE%E5%A4%9A%E4%BA%BA%E7%BD%91%E7%BB%9C%E4%B8%8B%E7%9A%84GamePlay%E6%A1%86%E6%9E%B6/",
+            "url": "https://smartre97.github.io/2026/08/14/UE%E5%A4%9A%E4%BA%BA%E7%BD%91%E7%BB%9C%E4%B8%8B%E7%9A%84GamePlay%E6%A1%86%E6%9E%B6/",
+            "title": "UE多人网络下的GamePlay框架",
+            "date_published": "2026-08-14T08:02:40.000Z",
+            "content_html": "",
+            "tags": [
+                "UE",
+                "客户端网络开发"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/GAS%E5%88%9D%E8%AF%86%E4%B8%8E%E5%BA%94%E7%94%A8/",
+            "url": "https://smartre97.github.io/2026/08/14/GAS%E5%88%9D%E8%AF%86%E4%B8%8E%E5%BA%94%E7%94%A8/",
+            "title": "GAS初识与应用",
+            "date_published": "2026-08-14T08:02:17.000Z",
+            "content_html": "",
+            "tags": [
+                "UE",
+                "GAS"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/GameplayTag/",
+            "url": "https://smartre97.github.io/2026/08/14/GameplayTag/",
+            "title": "GameplayTag",
+            "date_published": "2026-08-14T08:01:55.000Z",
+            "content_html": "<p>虚幻引擎的 GameplayTag 是一套层级化的（多叉树）、基于字符串的标签系统，用于在运行时给任意对象（Actor、组件、技能、UI 等）动态打上“标签”，并借此进行快速的状态判断、逻辑分流和数据驱动设计。它本质上是一个 FGameplayTag 结构体，内部将形如 Status.Debuff.Stun 的点分字符串，转化为高效的节点索引，通过 UGameplayTagManager 统一管理。</p>\n<p>‍</p>\n<p>一、它是什么</p>\n<p>核心结构：FGameplayTag 代表单个标签，FGameplayTagContainer 则可以存放一组标签。</p>\n<p>层级化：点分隔的命名形成父子关系，Status.Debuff 是 Status.Debuff.Stun 的父标签。</p>\n<p>查询方式：</p>\n<p>精确匹配：HasTag(Tag)</p>\n<p>父标签匹配：HasTagExact 或直接使用 MatchesTag，只要包含父标签或其任意子标签都算匹配。</p>\n<p>注册与来源：</p>\n<p>所有合法的标签都必须在项目的Config文件的 .ini（ DefaultGameplayTags.ini）（开启 Import Tags From Config）或 DataTable 中（添加到Gameplay Tag Table List）预先声明，引擎会构建标签树，避免运行时随意拼写导致的混乱和性能问题。</p>\n<p>可以在 Edit - Project Settings - Project - GameplayTags 中看到并添加入列表</p>\n<p>‍<br />\n‍</p>\n<p>主要作用</p>\n<p>状态与类型标记<br />\n给角色挂上 State.Dead、Status.Debuff.Poison、Team.Red 等标签，逻辑层直接问“是否有这个标签”来决定行为，避免硬编码 bool 或 enum 的大杂烩。</p>\n<p>GameplayAbilitySystem（GAS）的核心粘合剂<br />\nGAS 中几乎每个环节都由标签驱动：</p>\n<p>能力激活条件：ActivationRequiredTags / ActivationBlockedTags</p>\n<p>能力激活时自动给拥有者添加/移除标签：ActivationOwnedTags</p>\n<p>取消能力：CancelAbilitiesWithTag</p>\n<p>效果的持续/叠加/免疫：通过 GrantedTags、ApplicationTagRequirements、RemovalTagRequirements 等。</p>\n<p>伤害/属性修改的逻辑分块，比如 Effect.Damage.Fire。</p>\n<p>AI 与行为树<br />\n黑板键可以使用 GameplayTag，条件装饰器可以检查标签存在与否，从而驱动行为切换（如从巡逻切换到战斗）。</p>\n<p>UI 与物品系统<br />\n物品可以被赋予 Item.Weapon.Rifle、Item.Rarity.Legendary；UI 过滤列表时直接查询标签容器。</p>\n<p>网络同步的轻量标识<br />\n标签容器可以高效复制，标记诸如“已交互”“任务阶段”等状态，比同步大量布尔值更干净。</p>\n<p>三、优势</p>\n<p>高度灵活，无需修改代码<br />\n策划或设计师在配置中新增一个标签并声明，即可驱动新逻辑，无需重新编译 C++ 甚至蓝图基底。</p>\n<p>层级查询天然支持“类别”判断<br />\n例如一次性检查 HasTag(Status.Debuff) 就能覆盖所有减益子类（中毒、眩晕等），逻辑简洁且易于扩展。</p>\n<p>性能优异<br />\n标签内部通过 FName 和节点索引比较，HasTag 开销极低，且 GameplayTagManager 在注册时构建了高效的查询树，大批量使用也不会成为瓶颈。</p>\n<p>与 GAS 深度集成<br />\n若项目使用技能系统，GameplayTag 几乎无法绕过，它让整个技能、效果、属性体系的耦合变得松散而可控。</p>\n<p>网络友好<br />\n标签容器有专门的快速复制优化，比散落的条件变量更省带宽、更易维护。为了减少网络传输数据量，Tag可以被解析为 typedef uint16 FGameplayTagNetIndex;（即一个整数），（可以使用 UGameplayTagsManager::Get().GetNetIndexFromTag）查看任意 Tag 的索引，配置就在 ProjectSettins 。其中的</p>\n<p>Fast Replication：是否在网络传输时传输 Id 而不是完整字符串</p>\n<p>Commonly Replicated Tags：场景需要 频繁 同步的 Tag，如果这里有，那么构建 Id 的时候，会优先设置这些 Tag 的 Id。</p>\n<p>可视化与调试<br />\n编辑器中有 GameplayTag 选择器，蓝图节点清晰；运行时可以通过控制台命令 ShowDebug AbilitySystem 等查看当前标签。</p>\n<p>四、劣势</p>\n<p>缺少严格的编译期类型安全<br />\n如果在代码中直接写字符串（如 FGameplayTag::RequestGameplayTag(&quot;Status.Debuff.Stun&quot;)），拼错只会在运行时报错或返回无效标签，不主动检查容易埋雷。建议使用 FGameplayTag 变量并在蓝图中/DataTable 中引用。</p>\n<p>只能表示“有无”，无法携带数值<br />\n标签本身是布尔标记，无法表达“伤害增加 20%”。需要配合 GameplayEffect 的 Magnitude 或 Attributes 才行。</p>\n<p>需要预先注册管理<br />\n每个标签都必须在 GameplayTags 设置或 DataTable 中声明，未注册的动态标签在多人同步或某些模块中会被视为无效。小规模原型时会觉得多了一道工序。</p>\n<p>过度使用可能造成“标签污染”<br />\n随着项目膨胀，成百上千个标签若无良好命名规范和文档，会变得难以梳理，甚至出现含义重叠。</p>\n<p>层级设计固化风险<br />\n父标签一旦广泛使用，想重新调整层级结构就会牵扯大量配置和逻辑，前期设计需要一定预见性。</p>\n<p>五、常与哪些系统配合使用</p>\n<p>GameplayAbilitySystem：几乎是共生关系，所有技能、效果、属性集都依赖标签。</p>\n<p>GameplayEffect：通过标签来分类、叠加、免疫、移除效果。</p>\n<p>行为树 / StateTree：状态转移条件、黑板值大量使用标签。</p>\n<p>GameplayMessage 子系统：可以按标签广播消息，实现解耦的事件传递。</p>\n<p>UI 框架（Common UI、UMG）：用标签切换界面状态、筛选数据。</p>\n<p>物理与碰撞：通过标签而非ObjectType/Channel的方式动态标记可交互物。</p>\n<p>DataTable / DataRegistry：数据驱动的标签来源与配置。</p>\n<p>六、与其他方案的对比（何时更好用，何时更不好用）</p>\n<p>对比方案GameplayTag 的适用场景替代方案更优的场景C++ 枚举 / 蓝图 Enum状态种类繁多、需要运行时扩充、需要组合查询（多个互不排斥的状态）时，Tag 比 enum 灵活很多，不必反复改代码。状态集固定、有限且互斥（如角色移动状态：走、跑、游泳），用 enum 更简单、编译期安全，执行效率略高且类型严格。布尔变量集合多个独立的标记同时存在（眩晕、沉默、缠绕），标签查询和清除非常方便，且自带分类。仅需 1-2 个标记且逻辑简单，直接写 bool 省去注册标签的步骤，编码更直观。</p>\n<p>‍</p>\n<p>位掩码（Bitmask）需要层级关系、数量可能超过 32/64、希望各模块独立管理标签时，Tag 更可扩展，且不需要关心位的分配。组合状态固定且极度追求性能（如底层渲染），位运算最快，内存占用最小，但可读性差、难维护。FName / FString 直接比较需要全局唯一性检查、父级匹配、容器化查询，统一管理的标签池能避免重复造轮子。临时、本地的轻量标记，不想走注册流程，直接用 FName 省事，但容易出错且不支持层级。普通标识 ID + 表查询Tag 本身可兼作标识和逻辑判断，无需额外查表，生态系统（GAS、行为树）都原生支持。需要标记对应复杂数据时（如物品结构体），ID 配数据表更合适，Tag 只适合当附加筛选键。</p>\n<p>‍</p>\n<p>一句话总结比较：</p>\n<p>比枚举/布尔更灵活、更适合大型和动态状态管理；</p>\n<p>比位掩码更易读、易扩展，但不及它“底层极简”；</p>\n<p>比起裸字符串 / FName，多了层级、注册保障和全引擎统一的工具链，但代价是必须预先声明；</p>\n<p>如果不使用 GAS、项目规模很小，或者状态固定且互斥，那么 GameplayTag 可能属于“重型武器打蚊子”，直接用枚举或简单的 bool 反而更轻快。</p>\n<p>‍</p>\n<p>七、注意</p>\n<p>如果项目使用了 GameplayAbilitySystem，那几乎必须深入掌握 GameplayTag，它是整个系统的语言。</p>\n<p>如果只是中小型项目，但需要灵活的数据驱动状态管理（例如可配置的 Buff/Debuff、AI 行为），引入 GameplayTag 可以大幅提升扩展性，值得花费注册标签的初期成本。</p>\n<p>无论如何，要尽早制定标签命名规范和分层方案，并善用 DataTable 和编辑器工具来管理标签，防止后期标签地狱。</p>\n<p>若不打算用 GAS 又觉得注册标签繁琐，可以用它最简单的部分：仅通过 FGameplayTagContainer 动态标记事物，配合蓝图 Does Tag Match 等节点，仍能获得比 bool 一堆更优雅的代码。</p>\n<p>网络传输时使用 Index 由于网络传输的时候，如果勾选了 Fast 那么只会传输一个 Id，那么一定要保证客户端和服务器的 TagTree 完全一样，如果不一样就会出现服务器用 A.B.C1 的 Id 12，发送到客户端，被解析成 A.B.C2 的情况，导致表现或者逻辑出错，甚至崩溃。例如如果使用了 DataTable 进行辅助创建，那么这个 DataTable 不能是更新资源而是自动生成的，否则服务器更新，玩家不更新游戏客户端，就对不上了。</p>\n<p>‍</p>\n",
+            "tags": [
+                "UE",
+                "GameplayTag"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/UE%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7DataAsset/",
+            "url": "https://smartre97.github.io/2026/08/14/UE%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7DataAsset/",
+            "title": "UE数据资产DataAsset",
+            "date_published": "2026-08-14T08:01:35.000Z",
+            "content_html": "",
+            "tags": [
+                "UE"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/UE%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE-%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7or%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC/",
+            "url": "https://smartre97.github.io/2026/08/14/UE%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE-%E6%95%B0%E6%8D%AE%E8%B5%84%E4%BA%A7or%E6%95%B0%E6%8D%AE%E8%A1%A8%E6%A0%BC/",
+            "title": "UE存储数据 数据资产or数据表格",
+            "date_published": "2026-08-14T08:01:18.000Z",
+            "content_html": "",
+            "tags": [
+                "UE",
+                "数据管理"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/UE-TraceHitResult/",
+            "url": "https://smartre97.github.io/2026/08/14/UE-TraceHitResult/",
+            "title": "UE TraceHitResult",
+            "date_published": "2026-08-14T08:01:00.000Z",
+            "content_html": "",
+            "tags": [
+                "UE"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/UnLua%E7%9A%84%E4%BD%BF%E7%94%A8/",
+            "url": "https://smartre97.github.io/2026/08/14/UnLua%E7%9A%84%E4%BD%BF%E7%94%A8/",
+            "title": "UnLua的使用",
+            "date_published": "2026-08-14T08:00:47.000Z",
+            "content_html": "",
+            "tags": [
+                "UE",
+                "Lua"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/Const%E7%9A%84%E5%A2%9E%E5%BC%BA/",
+            "url": "https://smartre97.github.io/2026/08/14/Const%E7%9A%84%E5%A2%9E%E5%BC%BA/",
+            "title": "Const的增强",
+            "date_published": "2026-08-14T08:00:24.000Z",
+            "content_html": "",
+            "tags": [
+                "c++11"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E5%A2%9E%E5%BC%BA/",
+            "url": "https://smartre97.github.io/2026/08/14/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E5%A2%9E%E5%BC%BA/",
+            "title": "三目运算符的增强",
+            "date_published": "2026-08-14T08:00:13.000Z",
+            "content_html": "",
+            "tags": [
+                "c++11"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/",
+            "url": "https://smartre97.github.io/2026/08/14/%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/",
+            "title": "左值和右值",
+            "date_published": "2026-08-14T07:59:42.000Z",
+            "content_html": "<p>复习资料：</p>\n<p>C++11左值与右值详解-CSDN博客</p>\n<p>深入理解 C++11 中的 std::move —— 移动语义详解（小白友好版）-CSDN博客</p>\n<p>c++ 左值和右值_c++的左值和右值-CSDN博客</p>\n<p><a href=\"https://www.bilibili.com/video/BV1Esp7eFE54?p=57&amp;vd_source=7bb03e841da18b1373084bf7955696c5\">https://www.bilibili.com/video/BV1Esp7eFE54?p=57&amp;vd_source=7bb03e841da18b1373084bf7955696c5</a></p>\n<p>左值和右值</p>\n<p>左值 locator value</p>\n<p>特点：</p>\n<p>具有地址，存储在内存中，可以&amp;取地址</p>\n<p>表达式结束后依然存在。</p>\n<p>通常出现在等号左边</p>\n<p>例子：</p>\n<p>int a = 10;     // a 是左值<br />\nint* p = &amp;a;    // 可以取地址<br />\na = 20;         // 可以被赋值<br />\n变量、对象、数组都是左值</p>\n<p>右值</p>\n<p>特点：</p>\n<p>通常没有地址，存储在寄存器或者临时内存中</p>\n<p>不能取地址（除非绑定到const左值引用）</p>\n<p>通常是字面量、临时对象或表达式的中间结果。</p>\n<p>通常出现在等号右边。</p>\n<p>例子：</p>\n<p>int x = 5 + 8;  // 13 是一个右值（字面量/临时结果）<br />\nstring s = string(&quot;hello&quot;); // string(&quot;hello&quot;) 是一个临时对象，右值<br />\n10 = y; //错误，右值不能再=左侧<br />\nint&amp; ref = 10; //错误普通引用不能绑定右值<br />\nconst int&amp; cref = 10; //const引用可以绑定右值</p>\n<p>右值分类</p>\n<p>纯右值（prvalue） 将亡值（xvalue））</p>\n<p>纯右值（prvalue）</p>\n<p>如10、true、nullptr。</p>\n<p>将亡值（xvalue））：</p>\n<p>通过std::move转换得到的，即将销毁，但还能暂时使用的值。</p>\n<p>‍<br />\n‍</p>\n<p>总的来说，例如：</p>\n<p>int a = b+c, a 就是左值，其有变量名为a，通过&amp;a可以左值引用，获取该变量的地址。</p>\n<p>表达式b+c，返回值是右值，在其被赋值给某一变量前，我们不能通过变量名找到它，＆(b+c)这样的操作不会通过编译。</p>\n<p>左值引用</p>\n<p>#include &lt;bits/stdc++.h&gt;<br />\nusing namespace std;<br />\nint main(){<br />\nint a=10;<br />\nint&amp; b=a;// b是a的引用，引用相当于变量的别名，具体通过指针实现（读取a的地址，将a的地址存入b,相当于b指向了a）<br />\ncout&lt;&lt;b;//输出10<br />\nb=20;<br />\ncout&lt;&lt;a;//输出20<br />\n}<br />\n地址          内容<br />\n0x222220(a)   10<br />\n0x222230(b)   0x222220</p>\n<p>右值操作</p>\n<p>右值引入的目的是为了减少无意义的拷贝，主要与处理临时对象、转移资源、优化性能相关。</p>\n<p>右值引用</p>\n<p>移动构造函数与移动赋值运算符</p>\n<p>std::move</p>\n<p>std::forward与完美转发</p>\n<p>右值引用</p>\n<p>c++11新语法，专门用于绑定在右值上。</p>\n<p>右值引用运行绑定右值，并对他们操作，从而避免一些不必要的复制操作，实现更高效的代码</p>\n<p>int&amp; a = 10; // 错误：普通引用（左值引用）不能绑定右值。<br />\nconst int&amp; a = 10; // 正确：常左值引用可以延长右值寿命，但不能修改。<br />\nint&amp;&amp; a = 10; // 正确：右值引用，可以修改该值。移动语义</p>\n<p>#include &lt;bits/stdc++.h&gt;<br />\nusing namespace std;<br />\nint main(){<br />\nint a=10;<br />\nint&amp; b=a;<br />\nb=20;</p>\n<pre><code>const int&amp;&amp; b=20;\n</code></pre>\n<p>}</p>\n<p>主要用途：</p>\n<p>移动语义</p>\n<p>完美转发</p>\n<p>移动语义</p>\n<p>移动语义用于实现移动构造函数和移动赋值运算符。通过std::move触发。</p>\n<p>在旧c++标准中，传递和返回大型对象需要拷贝构造，这样的拷贝会造成资源浪费。</p>\n<p>#include &lt;string&gt;<br />\n#include &lt;iostream&gt;<br />\nusing namespace std;<br />\nstd::string LongString() {<br />\nstring s = &quot;大型数据对象&quot;;<br />\nreturn s; //将s的值拷贝给临时对象<br />\n}<br />\nint main() {<br />\nstring str = LongString(); // 从函数返回值的临时对象拷贝给str<br />\nreturn 0;<br />\n}</p>\n<p>移动构造函数与移动赋值运算符</p>\n<p>作用：不进行深拷贝（分配新内存，复制数据），而是进行资源转移（把旧对象指针给新对象，同时将旧对象指针置空）。可以说，深拷贝是复制一个文件，你会有两份文件。而资源转移是你把手中的文件给了另一个人，你手里不再有文件了，文件只存在一份。中途不进行无意义的拷贝。</p>\n<p>class Buffer {<br />\nint* data;<br />\npublic:<br />\n// 移动构造函数<br />\nBuffer(Buffer&amp;&amp; other) noexcept {<br />\nthis-&gt;data = other.data;  // 窃取资源<br />\nother.data = nullptr;     // 置空原对象，防止析构时释放内存<br />\n}<br />\n};</p>\n<p>移动构造函数使用案例</p>\n<p>没有使用移动构造函数的情况</p>\n<p>#include &lt;iostream&gt;<br />\n#include &lt;utility&gt; //为了使用 std::move</p>\n<p>class MyBuffer {<br />\npublic:<br />\nint* data;<br />\nint size;<br />\n//构造函数<br />\nMyBuffer(int s) : size(s) {<br />\ndata = new int[size];<br />\n}</p>\n<pre><code>//拷贝构造函数：深拷贝（重新申请内存，复制内容）\nMyBuffer(const MyBuffer&amp; other) : size(other.size) &#123;\n    data = new int[size]; //又申请了一块内存\n    for (int i = 0; i &lt; size; i++) &#123;\n        data[i] = other.data[i]; //逐个复制\n    &#125;\n    std::cout &lt;&lt; &quot;深拷贝\\n&quot;;\n&#125;\n\n//移动构造函数\n//注意：参数是 MyBuffer&amp;&amp; （右值引用）\nMyBuffer(MyBuffer&amp;&amp; other) noexcept &#123;\n    this-&gt;data = other.data;  //直接把对方的指针拿过来，不用开辟新内存\n    this-&gt;size = other.size;\n\n    other.data = nullptr;     //把原对象的指针置为空，防止对方析构时把内存删掉\n    other.size = 0;\n\n    std::cout &lt;&lt; &quot;移动构造，直接接管内存\\n&quot;;\n&#125;\n\n~MyBuffer() &#123;\n    delete[] data;\n&#125;\n</code></pre>\n<p>};</p>\n<p>int main() {<br />\nMyBuffer a(1000000);</p>\n<pre><code>MyBuffer b = a;       //调用拷贝构造函数\n\n//std::move(a) 告诉编译器：把a当作右值处理，我想把它“移动”走\nMyBuffer b = std::move(a); //使用移动构造函数\n\n//此时，a的data变成了nullptr，b接管了那 100 万个整数的内存\nreturn 0;\n</code></pre>\n<p>}</p>\n<p>std::move</p>\n<p>作用：强制将一个左值转换为右值（将亡值）</p>\n<p>string s1 = &quot;hello&quot;;<br />\nstring s2 = std::move(s1); // 调用移动构造，s1 现在变为空</p>\n<p>本质上他不是移动，至少一个类型转换，告诉编译器s1不再使用，把他当成右值拿走处理就好。</p>\n<p>‍</p>\n<p>move和指针赋值的区别</p>\n<p>string a = &quot;Hello&quot;;<br />\nstring b = move(a);  // 对象级别的资源转移</p>\n<p>// 发生的事情：<br />\n// 1. a 对象内部的字符串资源被转移给 b<br />\n// 2. a 对象本身还存在，但内容变空<br />\n// 3. 只有一份字符串数据在内存中</p>\n<p>指针赋值</p>\n<p>string* pa = new string(&quot;Hello&quot;);<br />\nstring* pb = pa;  // 指针拷贝，两个指针指向同一内存</p>\n<p>// 发生的事情：<br />\n// 1. pa 和 pb 都指向同一个字符串对象<br />\n// 2. 内存中只有一个字符串对象<br />\n// 3. 但有两个指针指向它</p>\n<p>std::forward与完美转发</p>\n<p>作用：配合模版在范式编程转发参数，避免不必要的拷贝和移动，保持参数的原有属性（左值还是右值）</p>\n<p>例如将一个右值传给一个模版函数时，这个右值会在函数内部成为一个有名字的变量，这会将它变为左值。std::forward可以避免这种情况，将它还原为右值。</p>\n<p>#include &lt;iostream&gt;<br />\n#include &lt;utility&gt;</p>\n<p>void process(int&amp; x) {<br />\nstd::cout &lt;&lt; &quot;处理左值\\n&quot;;<br />\n}</p>\n<p>void process(int&amp;&amp; x) {<br />\nstd::cout &lt;&lt; &quot;处理右值\\n&quot;;<br />\n}</p>\n<p>//不使用完美转发<br />\n//写一个wrapper函数，接收参数传给proccess<br />\ntemplate&lt;typename T&gt;<br />\nvoid wrapper(T&amp;&amp; arg) {<br />\n// 这里的 arg 虽然被声明为 T&amp;&amp; (万能引用)，<br />\n// 但在函数内部，arg 是有名字的变量，所以它成了左值！<br />\nprocess(arg);<br />\n}</p>\n<p>int main() {<br />\nint a = 10;<br />\nwrapper(a);  // 传入左值，输出：处理左值<br />\nwrapper(10); // 传入右值，输出：处理左值 (报错/不符合预期！)<br />\n}<br />\n//即使给wrapper传了一个右值10，但在wrapper内部，arg变成了一个有名字的左值，导致它调用的永远是 process(int&amp;)。</p>\n<p>//使用完美转发<br />\ntemplate&lt;typename T&gt;<br />\nvoid wrapper(T&amp;&amp; arg) {<br />\n// std::forward&lt;T&gt;(arg) 会根据 T 的类型<br />\n// 决定把 arg 转发为左值引用还是右值引用<br />\nprocess(std::forward&lt;T&gt;(arg));<br />\n}</p>\n<p>int main() {<br />\nint a = 10;<br />\nstd::cout &lt;&lt; &quot;传递 a (左值): &quot;;<br />\nwrapper(a);  //输出：处理左值</p>\n<pre><code>std::cout &lt;&lt; &quot;传递 10 (右值): &quot;;\nwrapper(10); //输出：处理右值\n</code></pre>\n<p>}</p>\n<p>在写模版，例如工厂模式、智能指针内部、std::vector::emplace_black时，你不知道用户传进来的是左值还是右值，为保证效率不产生额外拷贝，必须使用完美转发将参数属性不变的传递给下一个函数</p>\n",
+            "tags": [
+                "c++11"
+            ]
+        },
+        {
+            "id": "https://smartre97.github.io/2026/08/14/My-New-Post/",
+            "url": "https://smartre97.github.io/2026/08/14/My-New-Post/",
+            "title": "My New Post",
+            "date_published": "2026-08-14T07:59:29.000Z",
+            "content_html": "",
+            "tags": []
+        },
+        {
             "id": "https://smartre97.github.io/2026/08/13/hello-world/",
             "url": "https://smartre97.github.io/2026/08/13/hello-world/",
             "title": "Hello World",
