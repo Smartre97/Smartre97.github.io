@@ -28,7 +28,38 @@
             <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
             <category term="GAS" scheme="https://smartre97.github.io/tags/GAS/" />
             <pubDate>Fri, 14 Aug 2026 16:02:17 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
+            <description><![CDATA[ &lt;h1 id=&#34;gas简要&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas简要&#34;&gt;#&lt;/a&gt; GAS简要&lt;/h1&gt;
+&lt;h2 id=&#34;什么是gas&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是gas&#34;&gt;#&lt;/a&gt; 什么是GAS&lt;/h2&gt;
+&lt;p&gt;GAS（Gameplay Ability System，游戏技能系统） 是虚幻引擎内置的一个强大框架，他是一套用于组织、驱动和管理游戏中所有与“技能”和“属性”相关逻辑的工具集&lt;/p&gt;
+&lt;h2 id=&#34;gas的核心作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas的核心作用&#34;&gt;#&lt;/a&gt; GAS的核心作用&lt;/h2&gt;
+&lt;p&gt;GAS的核心价值在于，它将游戏中的“行为”（如攻击、施法）和“数值”（如生命值、力量）抽象为可复用、可数据驱动的资产，为处理buff与属性等系统提供了标准解决方案，能提高开发效率、增强代码可维护性。&lt;br /&gt;
+主要包括：&lt;/p&gt;
+&lt;p&gt;1、统一管理游戏数值与行为：无论是伤害、生命值，还是动态的武器射速、移动速度修改，或是技能的冷却与消耗，都可以通过GAS统一实现和管理。&lt;/p&gt;
+&lt;p&gt;2、应对复杂逻辑的“复杂度爆炸”：随着游戏发展，技能会加入消耗、冷却、Buff/Debuff、连击等机制，传统编码方式复杂度会急剧上升。GAS通过模块化设计，让开发者能清晰地组织和扩展这些逻辑。&lt;/p&gt;
+&lt;p&gt;3、原生支持网络多人游戏：GAS对网络复制（Replication）有良好的支持，能帮助开发者节省大量为多人游戏适配功能的时间。&lt;/p&gt;
+&lt;p&gt;4、提供开箱即用的调试工具：GAS自带Gameplay调试器、可视化记录器等工具，方便开发者追踪技能的执行流程和状态。&lt;/p&gt;
+&lt;h2 id=&#34;gas核心组件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas核心组件&#34;&gt;#&lt;/a&gt; GAS核心组件&lt;/h2&gt;
+&lt;p&gt;技能系统组件（Ability System Component, ASC）：这是GAS的“心脏”。它是一个ActorComponent，必须附加到任何需要使用GAS的角色（Actor）上。它负责管理该角色拥有的所有技能、属性和效果，并处理技能激活等所有交互。&lt;/p&gt;
+&lt;p&gt;游戏技能（Gameplay Ability, GA）：定义了角色可以执行的具体行为或技能。它可以是一个简单的攻击，也可以是一个复杂的、带有多阶段效果的魔法。&lt;/p&gt;
+&lt;p&gt;游戏属性（Gameplay Attribute）和属性集（Attribute Set）：Gameplay Attribute是存储在Attribute Set中的浮点数值，用于表示角色的各种状态，如生命值、魔法值、力量等。一个Attribute Set可以包含一组相关的属性。&lt;/p&gt;
+&lt;p&gt;游戏效果（Gameplay Effect, GE）：这是对属性进行修改的容器。例如，一个“伤害”GE可以瞬间减少生命值属性，一个“治疗”GE可以随时间逐渐恢复生命值。GE是实现Buff、Debuff、伤害、治疗等效果的核心机制。&lt;/p&gt;
+&lt;p&gt;游戏提示（Gameplay Cue）：用于触发与技能或效果关联的视听反馈，如粒子特效、声音、UI动画等。它提供了一种将游戏逻辑与表现层解耦的数据驱动方法。&lt;/p&gt;
+&lt;h2 id=&#34;使用步骤简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用步骤简介&#34;&gt;#&lt;/a&gt; 使用步骤简介&lt;/h2&gt;
+&lt;p&gt;使用GAS通常遵循以下步骤：&lt;/p&gt;
+&lt;p&gt;启用插件：GAS是作为一个插件存在的。你需要在虚幻编辑器的“编辑 &amp;gt; 插件”中，找到并启用 “Gameplay Abilities” 插件。&lt;/p&gt;
+&lt;p&gt;配置C++项目（关键步骤）：&lt;/p&gt;
+&lt;p&gt;GAS强烈建议在C&lt;ins&gt;项目中使用，因为核心的Gameplay Attribute只能在C&lt;/ins&gt;中定义。&lt;/p&gt;
+&lt;p&gt;在你的项目*.Build.cs文件中，将&amp;quot;GameplayAbilities&amp;quot;、&amp;quot;GameplayTags&amp;quot;和&amp;quot;GameplayTasks&amp;quot;添加到PublicDependencyModuleNames列表中。&lt;/p&gt;
+&lt;p&gt;添加技能系统组件（ASC）：为你希望拥有技能的角色（如玩家角色）创建一个C++类，并添加一个UAbilitySystemComponent类型的成员变量。&lt;/p&gt;
+&lt;p&gt;创建属性和属性集：在C++中创建继承自UAttributeSet的类，并在其中定义你的FGameplayAttributeData类型的属性（如生命值、魔法值）。&lt;/p&gt;
+&lt;p&gt;创建游戏技能（GA）和游戏效果（GE）：这些可以通过蓝图来创建。在蓝图中，你可以设计GA的逻辑（如播放蒙太奇、应用GE），并配置GE如何修改属性（瞬间、周期性或持续性的Buff/Debuff）。&lt;/p&gt;
+&lt;p&gt;授予并激活技能：在游戏逻辑中（例如玩家出生时），通过ASC的GiveAbility函数将GA授予角色。之后，你可以通过蓝图或C++的TryActivateAbility函数来激活技能。&lt;/p&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注意事项&#34;&gt;#&lt;/a&gt; 注意事项&lt;/h2&gt;
+&lt;p&gt;正确处理技能生命周期：务必确保技能在完成后能正确结束（End Ability），否则可能导致角色卡死或状态异常。&lt;/p&gt;
+&lt;p&gt;明确所有权概念：GAS中的“所有者”概念与网络复制中的所有权不同，需要正确理解，尤其是在处理伤害归属、效果来源等逻辑时。&lt;/p&gt;
+&lt;h1 id=&#34;gas使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas使用&#34;&gt;#&lt;/a&gt; GAS使用&lt;/h1&gt;
+&lt;h2 id=&#34;启用gas插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#启用gas插件&#34;&gt;#&lt;/a&gt; 启用GAS插件&lt;/h2&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://smartre97.github.io/2026/08/14/GameplayTag/</guid>
@@ -409,6 +440,8 @@ wrapper(10); //输出：处理右值
 &lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; deploy//可以缩写为hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; d&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; 可以合并快速运行&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; g&lt;/span&gt;&lt;span style=&#34;color:#A65E2B;--shiki-dark:#C99076&#34;&gt; -d&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;shokax主题使用页面&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shokax主题使用页面&#34;&gt;#&lt;/a&gt; ShokaX主题使用页面&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.shokax.kaitaku.xyz/features/contenttags/&#34;&gt;ShokaX指导页面&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;插入图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#插入图片&#34;&gt;#&lt;/a&gt; 插入图片&lt;/h2&gt;
 &lt;p&gt;Markdown 支持插入本地图片、网络图片或 Base64 编码图片。&lt;/p&gt;
 &lt;h3 id=&#34;示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#示例&#34;&gt;#&lt;/a&gt; 示例：&lt;/h3&gt;
