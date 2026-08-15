@@ -390,31 +390,75 @@ wrapper(10); //输出：处理右值
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://smartre97.github.io/2026/08/14/My-New-Post/</guid>
-            <title>My New Post</title>
-            <link>https://smartre97.github.io/2026/08/14/My-New-Post/</link>
-            <pubDate>Fri, 14 Aug 2026 15:59:29 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://smartre97.github.io/2026/08/13/hello-world/</guid>
             <title>Hello World</title>
             <link>https://smartre97.github.io/2026/08/13/hello-world/</link>
             <pubDate>Thu, 13 Aug 2026 18:22:40 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;h3 id=&#34;创建新文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建新文章&#34;&gt;#&lt;/a&gt; 创建新文章&lt;/h3&gt;
 &lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; new&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;My New Post&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; server&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; server//可以缩写为hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; s&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; generate&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; generate//可以缩写为hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; g&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; deploy&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; deploy//可以缩写为hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; d&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; 可以合并快速运行&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; hexo&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; g&lt;/span&gt;&lt;span style=&#34;color:#A65E2B;--shiki-dark:#C99076&#34;&gt; -d&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;插入图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#插入图片&#34;&gt;#&lt;/a&gt; 插入图片&lt;/h2&gt;
+&lt;p&gt;Markdown 支持插入本地图片、网络图片或 Base64 编码图片。&lt;/p&gt;
+&lt;h3 id=&#34;示例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#示例&#34;&gt;#&lt;/a&gt; 示例：&lt;/h3&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;本地图片&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#393A3490;--shiki-light-text-decoration:underline;--shiki-dark:#DEDCD590;--shiki-dark-text-decoration:underline&#34;&gt;ExampleImage.png&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; &#34;本地图片示例&#34;&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;网络图片&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#393A3490;--shiki-light-text-decoration:underline;--shiki-dark:#DEDCD590;--shiki-dark-text-decoration:underline&#34;&gt;https://example.com/image.png&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt; &#34;网络图片示例&#34;&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;ExampleImage.png&#34; alt=&#34;这里是图片描述&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;代码块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码块&#34;&gt;#&lt;/a&gt; 代码块&lt;/h2&gt;
+&lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;def&lt;/span&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt; greet&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#1E754F;--shiki-dark:#4D9375&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt; f&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;&#34;Hello, &lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;!&#34;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#998418;--shiki-dark:#B8A965&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;greet&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;World&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;插入链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#插入链接&#34;&gt;#&lt;/a&gt; 插入链接&lt;/h2&gt;
+&lt;p&gt;使用 &lt;a href=&#34;%E9%93%BE%E6%8E%A5&#34;&gt;文本&lt;/a&gt; 格式插入超链接。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.google.com&#34;&gt;访问Google&lt;/a&gt;&lt;br /&gt;
+复制&lt;/p&gt;
+&lt;h2 id=&#34;行内代码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#行内代码&#34;&gt;#&lt;/a&gt; 行内代码&lt;/h2&gt;
+&lt;p&gt;用反引号（`）包裹代码片段。&lt;/p&gt;
+&lt;p&gt;这是一个 &lt;code&gt;console.log(&amp;quot;Hello World&amp;quot;)&lt;/code&gt; 示例。&lt;/p&gt;
+&lt;h2 id=&#34;文字特效&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文字特效&#34;&gt;#&lt;/a&gt; 文字特效&lt;/h2&gt;
+&lt;p&gt;&lt;ins&gt;下划线&lt;/ins&gt;&lt;br /&gt;
+&lt;ins class=&#34;wavy&#34;&gt;波浪线&lt;/ins&gt;&lt;br /&gt;
+&lt;ins class=&#34;dot&#34;&gt;着重点&lt;/ins&gt;&lt;br /&gt;
+&lt;ins class=&#34;primary&#34;&gt;紫色下划线&lt;/ins&gt;&lt;br /&gt;
+&lt;ins class=&#34;wavy success&#34;&gt;绿色波浪线&lt;/ins&gt;&lt;br /&gt;
+&lt;ins class=&#34;dot warning&#34;&gt;黄色着重点&lt;/ins&gt;&lt;br /&gt;
+&lt;s&gt;删除线&lt;/s&gt;&lt;br /&gt;
+&lt;s class=&#34;danger&#34;&gt;红色删除线&lt;/s&gt;&lt;br /&gt;
+&lt;mark&gt;荧光高亮&lt;/mark&gt;&lt;br /&gt;
+&lt;span class=&#34;rainbow&#34;&gt;赤橙黄绿青蓝紫&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;red&#34;&gt;红色&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;pink&#34;&gt;粉色&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;orange&#34;&gt;橙色&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;yellow&#34;&gt;黄色&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;green&#34;&gt;绿色&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;aqua&#34;&gt;靛青&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;blue&#34;&gt;蓝色&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;purple&#34;&gt;紫色&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;grey&#34;&gt;灰色&lt;/span&gt;&lt;br /&gt;
+快捷键 &lt;span class=&#34;kbd&#34;&gt;Ctrl&lt;/span&gt; + &lt;span class=&#34;kbd red&#34;&gt;C&lt;/span&gt;&lt;br /&gt;
+H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
+29&lt;sup&gt;th&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&#34;spoiler-隐藏文字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#spoiler-隐藏文字&#34;&gt;#&lt;/a&gt; spoiler 隐藏文字&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;黑幕黑幕黑幕黑幕黑幕黑幕&lt;/span&gt; ： 鼠标滑过显示内容&lt;br /&gt;
+&lt;span class=&#34;spoiler bulr&#34; title=&#34;你知道得太多了&#34;&gt;模糊模糊模糊模糊模糊模糊&lt;/span&gt; ： 选中文字显示内容&lt;/p&gt;
+&lt;h2 id=&#34;label-标签块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#label-标签块&#34;&gt;#&lt;/a&gt; label 标签块&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;label&#34;&gt;default&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;label primary&#34;&gt;primary&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;label info&#34;&gt;info&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;label success&#34;&gt;✔️success&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;label warning&#34;&gt;warning&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;label danger&#34;&gt;💔danger&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
