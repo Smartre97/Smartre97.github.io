@@ -10,8 +10,51 @@
         </author>
         <description>菜鸡的日常技术记录</description>
         <language>zh-cn</language>
-        <pubDate>Mon, 24 Aug 2026 18:07:43 +0800</pubDate>
-        <lastBuildDate>Mon, 24 Aug 2026 18:07:43 +0800</lastBuildDate>
+        <pubDate>Mon, 24 Aug 2026 22:51:56 +0800</pubDate>
+        <lastBuildDate>Mon, 24 Aug 2026 22:51:56 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://smartre97.github.io/2026/08/24/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/</guid>
+            <title>日语学习</title>
+            <link>https://smartre97.github.io/2026/08/24/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/</link>
+            <category term="交流语言" scheme="https://smartre97.github.io/tags/%E4%BA%A4%E6%B5%81%E8%AF%AD%E8%A8%80/" />
+            <pubDate>Mon, 24 Aug 2026 22:51:56 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;电脑输入法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#电脑输入法&#34;&gt;#&lt;/a&gt; 电脑输入法&lt;/h1&gt;
+&lt;p&gt;参考文献&lt;br /&gt;
+&lt;a href=&#34;https://www.bilibili.com/video/BV14Sc5zuETY/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=7bb03e841da18b1373084bf7955696c5&#34;&gt;日语输入法&lt;/a&gt;&lt;br /&gt;
+字母和假名切换&lt;br /&gt;
+Shift+Capslock&lt;/p&gt;
+&lt;p&gt;长音的输入&lt;br /&gt;
+在假名状态下，即可直接输入平假名长音&lt;/p&gt;
+&lt;p&gt;片假名长音按“-”减号减切换&lt;/p&gt;
+&lt;p&gt;拨音的输入&lt;br /&gt;
+按两下n&lt;br /&gt;
+如果需要单打n，则按nn即可&lt;/p&gt;
+&lt;p&gt;促音&lt;br /&gt;
+在促音的位置，输入后面一个假名的首字母&lt;br /&gt;
+如果需要单独输入促音则&lt;/p&gt;
+&lt;p&gt;拗音&lt;br /&gt;
+拗音包括两个假名&lt;/p&gt;
+&lt;h1 id=&#34;日语的构成&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#日语的构成&#34;&gt;#&lt;/a&gt; 日语的构成&lt;/h1&gt;
+&lt;p&gt;汉字 罗马音 片假名 平假名&lt;/p&gt;
+&lt;h2 id=&#34;汉字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#汉字&#34;&gt;#&lt;/a&gt; 汉字&lt;/h2&gt;
+&lt;p&gt;包括简体字 繁体字 和字&lt;br /&gt;
+前两者是易懂的&lt;/p&gt;
+&lt;p&gt;和字是指&lt;br /&gt;
+例如 桜 強 辻 凪这样的类型。一般为由中文略微修改，或者是看着像是中文但是一眼不知道是什么的字。&lt;/p&gt;
+&lt;p&gt;日语的汉字大部分都是简体繁体字，写法基本相同，只是读音不同&lt;/p&gt;
+&lt;h2 id=&#34;平假名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#平假名&#34;&gt;#&lt;/a&gt; 平假名&lt;/h2&gt;
+&lt;p&gt;1、用于标注汉字的发音（主要）&lt;br /&gt;
+平假名可以说，就是日语用于标注发音的“拼音”&lt;/p&gt;
+&lt;p&gt;2、也用于组成单词构成语法&lt;br /&gt;
+一些日语词中会包含平假名，同时，在词的意思与意思之间往往需要平假名来组成粘合语&lt;/p&gt;
+&lt;h2 id=&#34;片假名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#片假名&#34;&gt;#&lt;/a&gt; 片假名&lt;/h2&gt;
+&lt;p&gt;1、标注外来语的外来专有名词。就像是中文会用可乐来指coke，sofa是沙发这样，日语用片假名来描述外来语。外来语一定是由片假名书写的&lt;br /&gt;
+2、强调 一些本来用平假名书写的词，表示强调时用片假名书写&lt;br /&gt;
+3、拟声拟态词 像是猫叫狗叫之类的&lt;/p&gt;
+&lt;h2 id=&#34;罗马音&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#罗马音&#34;&gt;#&lt;/a&gt; 罗马音&lt;/h2&gt;
+&lt;p&gt;是日语的国际音标。因为日语的平假名其实未学习时也难以看懂。所以有了罗马音作为国际音标。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://smartre97.github.io/2026/08/24/c++11%E5%AF%BC%E8%AF%BB/</guid>
             <title>c++11导读</title>
@@ -498,7 +541,7 @@
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;        float&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt; hight；浮点数&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;        bool&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt; isMale；布尔&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;        FString name；字符串 &lt;/span&gt;&lt;/span&gt;
-&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;        FText nickname；文本&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;   //文本一般用于大段的，或者需要用于本地化的内&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;        FText nickname；文本&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;     //文本一般用于大段的，或者需要用于本地化的内&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;        FName socketname；命名&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;   //在ue中例如在使用骨骼插槽命名等时，其实都是命名类型。比较两个命名会比字符串快很多。&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;        FVector location；向量&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;        FRotator rotation；旋转&lt;/span&gt;&lt;/span&gt;
@@ -517,8 +560,8 @@
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#2E8F82;--shiki-dark:#5DA994&#34;&gt; Dog&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt; :&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt; public&lt;/span&gt;&lt;span style=&#34;color:#2E8F82;--shiki-dark:#5DA994&#34;&gt; Anmimal&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;    public&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;:&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;    Human owner&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt;    owner&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//普通变量，需要一个实例才能以这种方式对其中的成员变量访问&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;    Animal&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;MAX_AGE&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//stastic静态变量可以直接访问&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt;    owner&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt;age&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;       //普通变量，需要一个实例才能以这种方式对其中的成员变量访问&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt;    Animal&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;MAX_AGE&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt; //stastic静态变量可以直接访问&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;通过静态的方式，可以共享的进行访问，子类可以快速得到父类中的变量值，不需要问每一个实例他们的变量是什么情况，不管地图中有多少个该实例，他们的MAX_AGE都是共享的，能节约内存。&lt;/p&gt;
@@ -586,9 +629,9 @@
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//Server 和 Client 函数也要求实现一个 _Implementation 的版本。&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//其他功能&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;CallInEditor&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;        //在编辑器中选中对象时，可以在细节面板通过按钮调用此函数。	制作编辑器工具函数，如“重置位置”。&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Exec&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;                //函数可以作为控制台命令被执行。	创建调试或作弊指令，如 &#34;God&#34; 或 &#34;AddHealth 100&#34;。&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Category &lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;   //和 UPROPERTY 类似，用于在蓝图中对函数进行分类。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;CallInEditor&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;            //在编辑器中选中对象时，可以在细节面板通过按钮调用此函数。	制作编辑器工具函数，如“重置位置”。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Exec&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;                    //函数可以作为控制台命令被执行。	创建调试或作弊指令，如 &#34;God&#34; 或 &#34;AddHealth 100&#34;。&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Category &lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;       //和 UPROPERTY 类似，用于在蓝图中对函数进行分类。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>
         <item>
