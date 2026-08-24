@@ -8,7 +8,56 @@
     <author>
       <name>轻沣</name>
     </author>
-    <updated>2026-08-24T04:08:19.000Z</updated>
+    <updated>2026-08-24T10:07:43.000Z</updated>
+    <entry>
+        <id>https://smartre97.github.io/2026/08/24/c++11%E5%AF%BC%E8%AF%BB/</id>
+        <title>c++11导读</title>
+        <link rel="alternate" href="https://smartre97.github.io/2026/08/24/c++11%E5%AF%BC%E8%AF%BB/"/>
+        <content type="html">&lt;h1 id=&#34;auto&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#auto&#34;&gt;#&lt;/a&gt; auto&lt;/h1&gt;
+&lt;h1 id=&#34;decltype&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#decltype&#34;&gt;#&lt;/a&gt; decltype&lt;/h1&gt;
+&lt;h1 id=&#34;左值右值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#左值右值&#34;&gt;#&lt;/a&gt; 左值右值&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://smartre97.github.io/2026/08/14/%E5%B7%A6%E5%80%BC%E5%92%8C%E5%8F%B3%E5%80%BC/&#34;&gt;左值和右值&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;列表初始化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表初始化&#34;&gt;#&lt;/a&gt; 列表初始化&lt;/h1&gt;
+&lt;h1 id=&#34;stdfunction&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#stdfunction&#34;&gt;#&lt;/a&gt; std::function&lt;/h1&gt;
+&lt;h1 id=&#34;stdbind&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#stdbind&#34;&gt;#&lt;/a&gt; std::bind&lt;/h1&gt;
+&lt;h1 id=&#34;lambda表达式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lambda表达式&#34;&gt;#&lt;/a&gt; lambda表达式&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://smartre97.github.io/2026/08/21/Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/&#34;&gt;lambda表达式&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;模板的改进&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模板的改进&#34;&gt;#&lt;/a&gt; 模板的改进&lt;/h1&gt;
+&lt;h1 id=&#34;并发线程相关&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#并发线程相关&#34;&gt;#&lt;/a&gt; 并发(线程相关)&lt;/h1&gt;
+&lt;h1 id=&#34;智能指针&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#智能指针&#34;&gt;#&lt;/a&gt; 智能指针&lt;/h1&gt;
+&lt;h1 id=&#34;基于范围的for循环&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于范围的for循环&#34;&gt;#&lt;/a&gt; 基于范围的for循环&lt;/h1&gt;
+&lt;h1 id=&#34;委托构造函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#委托构造函数&#34;&gt;#&lt;/a&gt; 委托构造函数&lt;/h1&gt;
+&lt;h1 id=&#34;继承构造函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#继承构造函数&#34;&gt;#&lt;/a&gt; 继承构造函数&lt;/h1&gt;
+&lt;h1 id=&#34;nullptr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#nullptr&#34;&gt;#&lt;/a&gt; nullptr&lt;/h1&gt;
+&lt;h1 id=&#34;final&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#final&#34;&gt;#&lt;/a&gt; final&lt;/h1&gt;
+&lt;h1 id=&#34;override&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#override&#34;&gt;#&lt;/a&gt; override&lt;/h1&gt;
+&lt;h1 id=&#34;default&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#default&#34;&gt;#&lt;/a&gt; default&lt;/h1&gt;
+&lt;h1 id=&#34;delete&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#delete&#34;&gt;#&lt;/a&gt; delete&lt;/h1&gt;
+&lt;h1 id=&#34;explicit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#explicit&#34;&gt;#&lt;/a&gt; explicit&lt;/h1&gt;
+&lt;h1 id=&#34;const&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#const&#34;&gt;#&lt;/a&gt; const&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://smartre97.github.io/2026/08/14/Const%E7%9A%84%E5%A2%9E%E5%BC%BA/&#34;&gt;const的增强&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;constexpr&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#constexpr&#34;&gt;#&lt;/a&gt; constexpr&lt;/h1&gt;
+&lt;h1 id=&#34;enum-class&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#enum-class&#34;&gt;#&lt;/a&gt; enum class&lt;/h1&gt;
+&lt;h1 id=&#34;非受限联合体&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#非受限联合体&#34;&gt;#&lt;/a&gt; 非受限联合体&lt;/h1&gt;
+&lt;h1 id=&#34;sizeof&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#sizeof&#34;&gt;#&lt;/a&gt; sizeof&lt;/h1&gt;
+&lt;h1 id=&#34;assertion&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#assertion&#34;&gt;#&lt;/a&gt; assertion&lt;/h1&gt;
+&lt;h1 id=&#34;自定义字面量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义字面量&#34;&gt;#&lt;/a&gt; 自定义字面量&lt;/h1&gt;
+&lt;h1 id=&#34;内存对齐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存对齐&#34;&gt;#&lt;/a&gt; 内存对齐&lt;/h1&gt;
+&lt;h1 id=&#34;thread_local&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#thread_local&#34;&gt;#&lt;/a&gt; thread_local&lt;/h1&gt;
+&lt;h1 id=&#34;基础数值类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础数值类型&#34;&gt;#&lt;/a&gt; 基础数值类型&lt;/h1&gt;
+&lt;h1 id=&#34;随机数功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#随机数功能&#34;&gt;#&lt;/a&gt; 随机数功能&lt;/h1&gt;
+&lt;h1 id=&#34;chrono&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#chrono&#34;&gt;#&lt;/a&gt; chrono&lt;/h1&gt;
+&lt;h1 id=&#34;duration&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#duration&#34;&gt;#&lt;/a&gt; duration&lt;/h1&gt;
+&lt;h1 id=&#34;time_point&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#time_point&#34;&gt;#&lt;/a&gt; time_point&lt;/h1&gt;
+&lt;h1 id=&#34;clocks&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#clocks&#34;&gt;#&lt;/a&gt; clocks&lt;/h1&gt;
+&lt;h1 id=&#34;新增数据结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新增数据结构&#34;&gt;#&lt;/a&gt; 新增数据结构&lt;/h1&gt;
+&lt;h1 id=&#34;新增算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新增算法&#34;&gt;#&lt;/a&gt; 新增算法&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/139515439&#34;&gt;参考资料&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="c++11" scheme="https://smartre97.github.io/tags/c-11/" />
+        <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
+        <updated>2026-08-24T10:07:43.000Z</updated>
+    </entry>
     <entry>
         <id>https://smartre97.github.io/2026/08/24/%E5%AD%98%E5%9C%A8%E4%B8%8E%E6%97%B6%E9%97%B4/</id>
         <title>存在与时间</title>
@@ -745,7 +794,7 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 &lt;p&gt;6、const int* const a a 既不能改变指向的地址，也不能通过 a 修改它所指向的整数的值&lt;/p&gt;
 &lt;p&gt;‍&lt;/p&gt;
 </content>
-        <category term="c++11" scheme="https://smartre97.github.io/tags/c-11/" />
+        <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-14T08:00:24.000Z</updated>
     </entry>
     <entry>
@@ -761,7 +810,7 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2F798A;--shiki-dark:#4C9A91&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//三目运算符可以当左值，这里给a赋值50&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;    cout &lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;endl&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//输出50&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
-        <category term="c++11" scheme="https://smartre97.github.io/tags/c-11/" />
+        <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-14T08:00:13.000Z</updated>
     </entry>
     <entry>
@@ -992,6 +1041,7 @@ int a = b+c, a 就是左值，其有变量名为a，通过&amp;amp;a可以左值
 &lt;p&gt;在写模版，例如工厂模式、智能指针内部、std::vector::emplace_black时，你不知道用户传进来的是左值还是右值，为保证效率不产生额外拷贝，必须使用完美转发将参数属性不变的传递给下一个函数&lt;/p&gt;
 </content>
         <category term="c++11" scheme="https://smartre97.github.io/tags/c-11/" />
+        <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-14T07:59:42.000Z</updated>
     </entry>
     <entry>
