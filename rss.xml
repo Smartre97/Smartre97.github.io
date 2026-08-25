@@ -10,8 +10,15 @@
         </author>
         <description>菜鸡的日常技术记录</description>
         <language>zh-cn</language>
-        <pubDate>Mon, 24 Aug 2026 22:51:56 +0800</pubDate>
-        <lastBuildDate>Mon, 24 Aug 2026 22:51:56 +0800</lastBuildDate>
+        <pubDate>Tue, 25 Aug 2026 18:50:06 +0800</pubDate>
+        <lastBuildDate>Tue, 25 Aug 2026 18:50:06 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://smartre97.github.io/2026/08/25/%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%A7%88/</guid>
+            <title>博客导览</title>
+            <link>https://smartre97.github.io/2026/08/25/%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%A7%88/</link>
+            <pubDate>Tue, 25 Aug 2026 18:50:06 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://smartre97.github.io/2026/08/24/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/</guid>
             <title>日语学习</title>
@@ -585,8 +592,7 @@ Shift+Capslock&lt;/p&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;    void&lt;/span&gt;&lt;span style=&#34;color:#59873A;--shiki-dark:#80A665&#34;&gt; GetResult&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt; inputA&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt; int&lt;/span&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt; inputB&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt; float&amp;#x26;&lt;/span&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt; outA&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt; int&amp;#x26;&lt;/span&gt;&lt;span style=&#34;color:#B07D48;--shiki-dark:#BD976A&#34;&gt; outB&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;    //在类型之后增加“&amp;#x26;”符号可以代表为输出值，如此可以得到一个，有两个输入两个输出的函数。&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;常用前缀&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用前缀&#34;&gt;#&lt;/a&gt; 常用前缀&lt;/h1&gt;
-&lt;h1 id=&#34;常用说明符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用说明符&#34;&gt;#&lt;/a&gt; 常用说明符&lt;/h1&gt;
+&lt;h3 id=&#34;常用说明符&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用说明符&#34;&gt;#&lt;/a&gt; 常用说明符&lt;/h3&gt;
 &lt;p&gt;UPROPERTY()宏中，常用如下说明符&lt;/p&gt;
 &lt;pre class=&#34;shiki shiki-themes vitesse-light vitesse-dark&#34; style=&#34;background-color:#ffffff;--shiki-dark-bg:#121212;color:#393a34;--shiki-dark:#dbd7caee&#34; tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//////////编辑器可见性相关&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;EditAnywhere&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;         //在蓝图类默认值 和 关卡中的实例都可编辑&lt;/span&gt;&lt;/span&gt;
@@ -632,6 +638,7 @@ Shift+Capslock&lt;/p&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;CallInEditor&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;            //在编辑器中选中对象时，可以在细节面板通过按钮调用此函数。	制作编辑器工具函数，如“重置位置”。&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Exec&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;                    //函数可以作为控制台命令被执行。	创建调试或作弊指令，如 &#34;God&#34; 或 &#34;AddHealth 100&#34;。&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Category &lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;       //和 UPROPERTY 类似，用于在蓝图中对函数进行分类。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;常用前缀&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用前缀&#34;&gt;#&lt;/a&gt; 常用前缀&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
@@ -645,8 +652,65 @@ Shift+Capslock&lt;/p&gt;
         </item>
         <item>
             <guid isPermalink="true">https://smartre97.github.io/2026/08/14/GAS%E5%88%9D%E8%AF%86%E4%B8%8E%E5%BA%94%E7%94%A8/</guid>
-            <title>GAS初识与应用</title>
+            <title>GAS快速应用</title>
             <link>https://smartre97.github.io/2026/08/14/GAS%E5%88%9D%E8%AF%86%E4%B8%8E%E5%BA%94%E7%94%A8/</link>
+            <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
+            <category term="GAS" scheme="https://smartre97.github.io/tags/GAS/" />
+            <pubDate>Fri, 14 Aug 2026 16:02:17 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;gas简要&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas简要&#34;&gt;#&lt;/a&gt; GAS简要&lt;/h1&gt;
+&lt;h2 id=&#34;什么是gas&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是gas&#34;&gt;#&lt;/a&gt; 什么是GAS&lt;/h2&gt;
+&lt;p&gt;GAS（Gameplay Ability System，游戏技能系统） 是虚幻引擎内置的一个强大框架，他是一套用于组织、驱动和管理游戏中所有与“技能”和“属性”相关逻辑的工具集&lt;/p&gt;
+&lt;h2 id=&#34;gas的核心作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas的核心作用&#34;&gt;#&lt;/a&gt; GAS的核心作用&lt;/h2&gt;
+&lt;p&gt;GAS的核心价值在于，它将游戏中的“行为”（如攻击、施法）和“数值”（如生命值、力量）抽象为可复用、可数据驱动的资产，为处理buff与属性等系统提供了标准解决方案，能提高开发效率、增强代码可维护性。&lt;br /&gt;
+主要包括：&lt;/p&gt;
+&lt;p&gt;1、统一管理游戏数值与行为：无论是伤害、生命值，还是动态的武器射速、移动速度修改，或是技能的冷却与消耗，都可以通过GAS统一实现和管理。&lt;/p&gt;
+&lt;p&gt;2、应对复杂逻辑的“复杂度爆炸”：随着游戏发展，技能会加入消耗、冷却、Buff/Debuff、连击等机制，传统编码方式复杂度会急剧上升，同时技能与角色类强绑定，修改一个技能可能会意外破坏另一个。GAS通过模块化设计，让开发者能清晰地组织和扩展这些逻辑。&lt;/p&gt;
+&lt;p&gt;3、原生支持网络多人游戏：GAS对网络复制（Replication）有良好的支持，能帮助开发者节省大量为多人游戏适配功能的时间。在不使用GAS时，需要手动为每个变量和时间编写复杂的网络复制代码，容易出错。同时，例如射击等操作，如果放在服务器上，意味着在延迟后才能同步到客户端，会劣化游戏体验。&lt;/p&gt;
+&lt;p&gt;4、提供开箱即用的调试工具：GAS自带Gameplay调试器、可视化记录器等工具，方便开发者追踪技能的执行流程和状态。&lt;/p&gt;
+&lt;h2 id=&#34;gas核心组件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas核心组件&#34;&gt;#&lt;/a&gt; GAS核心组件&lt;/h2&gt;
+&lt;p&gt;技能系统组件（Ability System Component, ASC）：它是一个ActorComponent，必须附加到任何需要使用GAS的角色（Actor）上。它负责管理该角色拥有的所有技能、属性和效果，并处理技能激活等所有交互。&lt;/p&gt;
+&lt;p&gt;游戏技能（Gameplay Ability, GA）：定义了角色可以执行的具体行为或技能。它可以是一个简单的攻击，也可以是一个复杂的、带有多阶段效果的魔法。&lt;/p&gt;
+&lt;p&gt;游戏属性（Gameplay Attribute）和属性集（Attribute Set）：Gameplay Attribute是存储在Attribute Set中的浮点数值，用于表示角色的各种状态，如生命值、魔法值、力量等。一个Attribute Set可以包含一组相关的属性。&lt;/p&gt;
+&lt;p&gt;游戏效果（Gameplay Effect, GE）：这是对属性进行修改的容器。例如，一个“伤害”GE可以瞬间减少生命值属性，一个“治疗”GE可以随时间逐渐恢复生命值。GE是实现Buff、Debuff、伤害、治疗等效果的核心机制。&lt;/p&gt;
+&lt;p&gt;游戏提示（Gameplay Cue）：用于触发与技能或效果关联的视听反馈，如粒子特效、声音、UI动画等。它提供了一种将游戏逻辑与表现层解耦的数据驱动方法。&lt;/p&gt;
+&lt;p&gt;GameplayTag&lt;/p&gt;
+&lt;h2 id=&#34;使用步骤简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用步骤简介&#34;&gt;#&lt;/a&gt; 使用步骤简介&lt;/h2&gt;
+&lt;p&gt;使用GAS通常遵循以下步骤：&lt;/p&gt;
+&lt;p&gt;启用插件：GAS是作为一个插件存在的。你需要在虚幻编辑器的“编辑 &amp;gt; 插件”中，找到并启用 “Gameplay Abilities” 插件。&lt;/p&gt;
+&lt;p&gt;配置C++项目（关键步骤）：&lt;/p&gt;
+&lt;p&gt;GAS强烈建议在C&lt;ins&gt;项目中使用，因为核心的Gameplay Attribute只能在C&lt;/ins&gt;中定义。&lt;/p&gt;
+&lt;p&gt;在你的项目*.Build.cs文件中，将&amp;quot;GameplayAbilities&amp;quot;、&amp;quot;GameplayTags&amp;quot;和&amp;quot;GameplayTasks&amp;quot;添加到PublicDependencyModuleNames列表中。&lt;/p&gt;
+&lt;p&gt;添加技能系统组件（ASC）：为你希望拥有技能的角色（如玩家角色）创建一个C++类，并添加一个UAbilitySystemComponent类型的成员变量。&lt;/p&gt;
+&lt;p&gt;创建属性和属性集：在C++中创建继承自UAttributeSet的类，并在其中定义你的FGameplayAttributeData类型的属性（如生命值、魔法值）。&lt;/p&gt;
+&lt;p&gt;创建游戏技能（GA）和游戏效果（GE）：这些可以通过蓝图来创建。在蓝图中，你可以设计GA的逻辑（如播放蒙太奇、应用GE），并配置GE如何修改属性（瞬间、周期性或持续性的Buff/Debuff）。&lt;/p&gt;
+&lt;p&gt;授予并激活技能：在游戏逻辑中（例如玩家出生时），通过ASC的GiveAbility函数将GA授予角色。之后，你可以通过蓝图或C++的TryActivateAbility函数来激活技能。&lt;/p&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#注意事项&#34;&gt;#&lt;/a&gt; 注意事项&lt;/h2&gt;
+&lt;p&gt;正确处理技能生命周期：务必确保技能在完成后能正确结束（End Ability），否则可能导致角色卡死或状态异常。&lt;/p&gt;
+&lt;p&gt;明确所有权概念：GAS中的“所有者”概念与网络复制中的所有权不同，需要正确理解，尤其是在处理伤害归属、效果来源等逻辑时。&lt;/p&gt;
+&lt;h1 id=&#34;gas使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gas使用&#34;&gt;#&lt;/a&gt; GAS使用&lt;/h1&gt;
+&lt;h2 id=&#34;启用gas插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#启用gas插件&#34;&gt;#&lt;/a&gt; 启用GAS插件&lt;/h2&gt;
+&lt;p&gt;在虚幻引擎工具栏-编辑-插件&lt;br /&gt;
+搜索Gameplay Abilities   勾选并重启引擎&lt;/p&gt;
+&lt;h2 id=&#34;设计gameplay标签系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计gameplay标签系统&#34;&gt;#&lt;/a&gt; 设计Gameplay标签系统&lt;/h2&gt;
+&lt;p&gt;GAS配合标签系统，能通过数据配置快速增加新机制，避免繁杂的if，提高开发效率和运行性能&lt;/p&gt;
+&lt;p&gt;提前根据游戏需要设计相关标签系统&lt;br /&gt;
+标签系统一般包含：&lt;br /&gt;
+属性与数值&lt;br /&gt;
+状态管理&lt;br /&gt;
+技能和效果&lt;br /&gt;
+AI行为&lt;br /&gt;
+UI显示&lt;br /&gt;
+动画和音效&lt;br /&gt;
+&lt;a href=&#34;https://smartre97.github.io/2026/08/14/GameplayTag/&#34;&gt;跳转GameplayTag描述&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;添加c类&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加c类&#34;&gt;#&lt;/a&gt; 添加C++类&lt;/h2&gt;
+&lt;p&gt;添加如下c++类&lt;br /&gt;
+AttributeSet属性集  命名缩写为AS_。如用于角色的属性集可以为AS_Character。一般需要分别创建AS_Character、AS_NPC、AS_Vehicle（载具），用于给有属性的类使用。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://smartre97.github.io/2026/08/14/GAS%E5%BF%AB%E9%80%9F%E5%BA%94%E7%94%A8/</guid>
+            <title>GAS快速应用</title>
+            <link>https://smartre97.github.io/2026/08/14/GAS%E5%BF%AB%E9%80%9F%E5%BA%94%E7%94%A8/</link>
             <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
             <category term="GAS" scheme="https://smartre97.github.io/tags/GAS/" />
             <pubDate>Fri, 14 Aug 2026 16:02:17 +0800</pubDate>
