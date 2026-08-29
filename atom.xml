@@ -14,6 +14,7 @@
         <title>虚幻引擎codex使用</title>
         <link rel="alternate" href="https://smartre97.github.io/2026/08/27/%E8%99%9A%E5%B9%BB%E5%BC%95%E6%93%8Ecodex%E4%BD%BF%E7%94%A8/"/>
         <content type="html"></content>
+        <category term="UE" scheme="https://smartre97.github.io/categories/UE/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
         <category term="Codex" scheme="https://smartre97.github.io/tags/Codex/" />
         <category term="MCP" scheme="https://smartre97.github.io/tags/MCP/" />
@@ -65,7 +66,8 @@
 &lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
-        <category term="hexo" scheme="https://smartre97.github.io/categories/hexo/" />
+        <category term="Hexo" scheme="https://smartre97.github.io/categories/Hexo/" />
+        <category term="Hexo" scheme="https://smartre97.github.io/tags/Hexo/" />
         <updated>2026-08-25T10:50:06.000Z</updated>
     </entry>
     <entry>
@@ -108,7 +110,8 @@ Shift+Capslock&lt;/p&gt;
 &lt;h2 id=&#34;罗马音&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#罗马音&#34;&gt;#&lt;/a&gt; 罗马音&lt;/h2&gt;
 &lt;p&gt;是日语的国际音标。因为日语的平假名其实未学习时也难以看懂。所以有了罗马音作为国际音标。&lt;/p&gt;
 </content>
-        <category term="交流语言" scheme="https://smartre97.github.io/tags/%E4%BA%A4%E6%B5%81%E8%AF%AD%E8%A8%80/" />
+        <category term="各国语言" scheme="https://smartre97.github.io/categories/%E5%90%84%E5%9B%BD%E8%AF%AD%E8%A8%80/" />
+        <category term="日语" scheme="https://smartre97.github.io/tags/%E6%97%A5%E8%AF%AD/" />
         <updated>2026-08-24T14:51:56.000Z</updated>
     </entry>
     <entry>
@@ -156,6 +159,7 @@ Shift+Capslock&lt;/p&gt;
 &lt;h1 id=&#34;新增算法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#新增算法&#34;&gt;#&lt;/a&gt; 新增算法&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/139515439&#34;&gt;参考资料&lt;/a&gt;&lt;/p&gt;
 </content>
+        <category term="c++" scheme="https://smartre97.github.io/categories/c/" />
         <category term="c++11" scheme="https://smartre97.github.io/tags/c-11/" />
         <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-24T10:07:43.000Z</updated>
@@ -181,7 +185,8 @@ Shift+Capslock&lt;/p&gt;
 不能用以往的方式定义，只能说“存在”不能以过去对“物”的方式去定义，说明“存在”不是类似存在者的东西。这种定义方法不适用于存在。正因如此，应该思考一种新的方式去追问它。&lt;br /&gt;
 自明不代表理解，模糊的理解会让它的意义更深的隐藏。&lt;/p&gt;
 </content>
-        <category term="读书笔记" scheme="https://smartre97.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" />
+        <category term="读书笔记" scheme="https://smartre97.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" />
+        <category term="存在与时间" scheme="https://smartre97.github.io/tags/%E5%AD%98%E5%9C%A8%E4%B8%8E%E6%97%B6%E9%97%B4/" />
         <updated>2026-08-24T04:08:19.000Z</updated>
     </entry>
     <entry>
@@ -359,6 +364,7 @@ Shift+Capslock&lt;/p&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;    // x == 10, y == 40&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="c++" scheme="https://smartre97.github.io/categories/c/" />
         <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-21T07:32:05.000Z</updated>
     </entry>
@@ -550,6 +556,7 @@ Shift+Capslock&lt;/p&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="c++" scheme="https://smartre97.github.io/categories/c/" />
         <category term="c++11" scheme="https://smartre97.github.io/tags/c-11/" />
         <updated>2026-08-21T06:56:10.000Z</updated>
     </entry>
@@ -716,6 +723,7 @@ Shift+Capslock&lt;/p&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;Category &lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt; &#34;&lt;/span&gt;&lt;span style=&#34;color:#B56959;--shiki-dark:#C98A7D&#34;&gt;Name&lt;/span&gt;&lt;span style=&#34;color:#B5695977;--shiki-dark:#C98A7D77&#34;&gt;&#34;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;       //和 UPROPERTY 类似，用于在蓝图中对函数进行分类。&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;常用前缀&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用前缀&#34;&gt;#&lt;/a&gt; 常用前缀&lt;/h1&gt;
 </content>
+        <category term="UE" scheme="https://smartre97.github.io/categories/UE/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
         <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-19T07:19:50.000Z</updated>
@@ -725,8 +733,10 @@ Shift+Capslock&lt;/p&gt;
         <title>UE多人网络下的GamePlay框架</title>
         <link rel="alternate" href="https://smartre97.github.io/2026/08/14/UE%E5%A4%9A%E4%BA%BA%E7%BD%91%E7%BB%9C%E4%B8%8B%E7%9A%84GamePlay%E6%A1%86%E6%9E%B6/"/>
         <content type="html"></content>
+        <category term="UE" scheme="https://smartre97.github.io/categories/UE/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
         <category term="客户端网络开发" scheme="https://smartre97.github.io/tags/%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/" />
+        <category term="Gameplay框架" scheme="https://smartre97.github.io/tags/Gameplay%E6%A1%86%E6%9E%B6/" />
         <updated>2026-08-14T08:02:40.000Z</updated>
     </entry>
     <entry>
@@ -792,6 +802,7 @@ AttributeSet属性集  命名前缀为AS_。如用于角色的属性集可以为
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="UE" scheme="https://smartre97.github.io/categories/UE/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
         <category term="GAS" scheme="https://smartre97.github.io/tags/GAS/" />
         <updated>2026-08-14T08:02:17.000Z</updated>
@@ -887,8 +898,10 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 &lt;p&gt;网络传输时使用 Index 由于网络传输的时候，如果勾选了 Fast 那么只会传输一个 Id，那么一定要保证客户端和服务器的 TagTree 完全一样，如果不一样就会出现服务器用 A.B.C1 的 Id 12，发送到客户端，被解析成 A.B.C2 的情况，导致表现或者逻辑出错，甚至崩溃。例如如果使用了 DataTable 进行辅助创建，那么这个 DataTable 不能是更新资源而是自动生成的，否则服务器更新，玩家不更新游戏客户端，就对不上了。&lt;/p&gt;
 &lt;p&gt;‍&lt;/p&gt;
 </content>
+        <category term="UE" scheme="https://smartre97.github.io/categories/UE/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
         <category term="GameplayTag" scheme="https://smartre97.github.io/tags/GameplayTag/" />
+        <category term="UE基础" scheme="https://smartre97.github.io/tags/UE%E5%9F%BA%E7%A1%80/" />
         <updated>2026-08-14T08:01:55.000Z</updated>
     </entry>
     <entry>
@@ -927,7 +940,9 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 而ID、名称、类型等不重要且重复内容，可以由数据表格管理。&lt;br /&gt;
 由此得到DataTable的便捷查询和统计，同时也得到DataAsset的数据管理与处理。&lt;/p&gt;
 </content>
+        <category term="c++" scheme="https://smartre97.github.io/categories/c/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
+        <category term="UE基础" scheme="https://smartre97.github.io/tags/UE%E5%9F%BA%E7%A1%80/" />
         <updated>2026-08-14T08:01:35.000Z</updated>
     </entry>
     <entry>
@@ -955,6 +970,7 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 &lt;p&gt;Trace Start：&lt;/p&gt;
 &lt;p&gt;Trace End：&lt;/p&gt;
 </content>
+        <category term="UE" scheme="https://smartre97.github.io/categories/UE/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
         <updated>2026-08-14T08:01:00.000Z</updated>
     </entry>
@@ -970,6 +986,8 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 &lt;h1 id=&#34;插件的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#插件的使用&#34;&gt;#&lt;/a&gt; 插件的使用&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1KY4y1r7s5/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=7bb03e841da18b1373084bf7955696c5&#34;&gt;参考视频UnLua入门&lt;/a&gt;&lt;/p&gt;
 </content>
+        <category term="UE" scheme="https://smartre97.github.io/categories/UE/" />
+        <category term="Lua" scheme="https://smartre97.github.io/categories/UE/Lua/" />
         <category term="UE" scheme="https://smartre97.github.io/tags/UE/" />
         <category term="Lua" scheme="https://smartre97.github.io/tags/Lua/" />
         <updated>2026-08-14T08:00:47.000Z</updated>
@@ -989,6 +1007,7 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 &lt;p&gt;6、const int* const a a 既不能改变指向的地址，也不能通过 a 修改它所指向的整数的值&lt;/p&gt;
 &lt;p&gt;‍&lt;/p&gt;
 </content>
+        <category term="c++" scheme="https://smartre97.github.io/categories/c/" />
         <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-14T08:00:24.000Z</updated>
     </entry>
@@ -1005,6 +1024,7 @@ GAS 中几乎每个环节都由标签驱动：&lt;br /&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#1e754f;--shiki-dark:#4d9375&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#2F798A;--shiki-dark:#4C9A91&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//三目运算符可以当左值，这里给a赋值50&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;    cout &lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#AB5959;--shiki-dark:#CB7676&#34;&gt;&amp;#x3C;&lt;/span&gt;&lt;span style=&#34;color:#393A34;--shiki-dark:#DBD7CAEE&#34;&gt;endl&lt;/span&gt;&lt;span style=&#34;color:#999999;--shiki-dark:#666666&#34;&gt;;&lt;/span&gt;&lt;span style=&#34;color:#A0ADA0;--shiki-dark:#758575DD&#34;&gt;//输出50&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
+        <category term="c++" scheme="https://smartre97.github.io/categories/c/" />
         <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-14T08:00:13.000Z</updated>
     </entry>
@@ -1235,6 +1255,7 @@ int a = b+c, a 就是左值，其有变量名为a，通过&amp;amp;a可以左值
 &lt;span class=&#34;line&#34;&gt;&lt;span style=&#34;color:#2993a3;--shiki-dark:#5eaab5&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;在写模版，例如工厂模式、智能指针内部、std::vector::emplace_black时，你不知道用户传进来的是左值还是右值，为保证效率不产生额外拷贝，必须使用完美转发将参数属性不变的传递给下一个函数&lt;/p&gt;
 </content>
+        <category term="c++" scheme="https://smartre97.github.io/categories/c/" />
         <category term="c++11" scheme="https://smartre97.github.io/tags/c-11/" />
         <category term="c++" scheme="https://smartre97.github.io/tags/c/" />
         <updated>2026-08-14T07:59:42.000Z</updated>
@@ -1377,6 +1398,8 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;span class=&#34;label warning&#34;&gt;warning&lt;/span&gt;&lt;br /&gt;
 &lt;span class=&#34;label danger&#34;&gt;💔danger&lt;/span&gt;&lt;/p&gt;
 </content>
+        <category term="Hexo" scheme="https://smartre97.github.io/categories/Hexo/" />
+        <category term="Hexo" scheme="https://smartre97.github.io/tags/Hexo/" />
         <updated>2026-08-13T10:22:40.268Z</updated>
     </entry>
 </feed>
